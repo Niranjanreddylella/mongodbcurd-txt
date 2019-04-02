@@ -1,0 +1,47 @@
+MANGO-DB::
+--------------------------------
+
+user name : niranjanreddylella965@gamil.com
+password : n@8099455377
+
+
+
+db:test
+collection:taxentry
+
+mongo queries: 
+
+-->show dbs means it will show databases in our account
+
+--> use <database name>  ex: use test  it will create database in the name of test
+
+-->for create collection:
+   
+   db.createCollection("<collection name>")
+ex:   
+   use test  
+   db.createCollection("mycollection")
+
+-->for drop collection
+
+db.mycollection.drop()
+
+
+-->for insert data:
+
+  >db.<collection name>.insert({'name':'data'})
+ex:
+  >db.taxentry.insert({rate:500331,restriction based:'Ril',restriction of GTI:'yes',rate description:'50%',application from:'09-7-2011',application to:'09-02-2011'})
+
+--> to retrieve data:
+
+   db.taxentry.find()
+
+-->to delete data
+
+   db.taxentry.remove({'rate':'500331'})
+
+-->to update data
+
+  db.taxentry.update({'rate':'50004'},{$set:{'rate':'500032'}})
+atlas account details.txt
